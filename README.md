@@ -1,4 +1,5 @@
 📊 Student Placement Predictor
+
 A Machine Learning web application that predicts whether a student is likely to get placed based on academic and skill-related inputs.
 This project uses a trained machine learning model and a Flask web interface to allow users to input student details and get placement predictions.
 
