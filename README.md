@@ -6,7 +6,6 @@ This project uses a trained machine learning model and a Flask web interface to 
 🚀 Features
 
 ~Predicts student placement chances
-
 ~Simple and interactive web interface
 ~Machine Learning model trained on placement dataset
 ~Flask-based web application
@@ -23,6 +22,7 @@ This project uses a trained machine learning model and a Flask web interface to 
 ~Pickle (for saving ML model)
 
 📌 Future Improvements
+
 Add better UI design
 Deploy the project online
 Use more advanced ML models
