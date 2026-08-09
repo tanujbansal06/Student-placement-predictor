@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="result-page">
+
+        <div class="result-card">
+
+            <div class="result-icon">
+                🎓
+            </div>
+
+            <p class="result-label">
+                YOUR PLACEMENT ESTIMATE
+            </p>
+
+            <h1>
+                {{ "%.2f"|format(probability) }}%
+            </h1>
+
+            <p class="chance-text">
+                Estimated Placement Chance
+            </p>
+
+
+            <!-- Progress Bar -->
+
+            <div class="progress-container">
+
+                <div
+                    class="progress-bar"
+                    style="width: {{ probability }}%;">
+                </div>
+
+            </div>
+
+
+            <!-- Feedback -->
+
+            <div class="feedback">
+
+                {% if probability < 25 %}
+
+                    <div class="status very-low">
+                        Very Low
+                    </div>
+
+                    <p>
+                        {{ message }}
+                    </p>
+
+                {% elif probability < 50 %}
+
+                    <div class="status low">
+                        Low
+                    </div>
+
+                    <p>
+                        {{ message }}
+                    </p>
+
+                {% elif probability < 70 %}
+
+                    <div class="status moderate">
+                        Moderate
+                    </div>
+
+                    <p>
+                        {{ message }}
+                    </p>
+
+                {% elif probability < 85 %}
+
+                    <div class="status good">
+                        Good
+                    </div>
+
+                    <p>
+                        {{ message }}
+                    </p>
+
+                {% else %}
+
+                    <div class="status excellent">
+                        Excellent
+                    </div>
+
+                    <p>
+                        {{ message }}
+                    </p>
+
+                {% endif %}
+
+            </div>
+
+
+            <!-- Button -->
+
+            <a href="/" class="again-btn">
+                ← Predict Again
+            </a>
+
+        </div>
+
+
+        <p class="result-footer">
+            Powered by Machine Learning • Logistic Regression
+        </p>
+
+    </div>
+
+</body>
+</html>
