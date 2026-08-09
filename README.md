@@ -58,3 +58,37 @@ For example:
 Estimated Placement Chance: 78.42%
 
 Good — You have a good chance of getting placed.
+## 🔮 Future Improvements
+
+Some possible improvements for the project:
+
+- 📊 Add graphical visualization of prediction
+- 🎯 Provide personalized improvement suggestions
+- 📈 Show feature-wise contribution to placement probability
+- 👤 Add student login and profile management
+- 🗄️ Store prediction history
+- 📱 Improve mobile responsiveness
+- 🤖 Experiment with Random Forest, SVM and XGBoost
+- 📊 Add model performance dashboard
+- 🔐 Add secure authentication
+
+---
+
+## 👨‍💻 Author
+
+**Tanuj Bansal**
+
+B.Tech Computer Science & Engineering  
+AI & Data Science
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is created for educational and learning purposes.
